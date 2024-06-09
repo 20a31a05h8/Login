@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic_Webpage</title>
+        <link rel="stylesheet" href="mini.css">
+    </head>
+    <body>
+        <header>
+            <h2 class="logo">ANIME</h2>
+            <nav class="navigation">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">SERVICES</a>
+                <a href="#">CONTACT</a>
+                <button class="btn" >LOGIN</button>
+                <button class="btn-pop" >CALICLATER</button>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <span class="ion"><ion-icon name="close-outline"></ion-icon></span>
+            <div class="loginform">
+                <h2>LOGIN</h2>
+                <form action="">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" required>
+                        <label>User ID</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember_forget">
+                        <label><input type="checkbox">Remember Me</label>
+                        <a href="#">Forget_Password</a>
+                    </div>
+                    <button class="log" type="submit">LOGIN</button>
+                    <div class="register">
+                        <p>Don't have account?<a href="#" class="register_link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="registrationform">
+                <h2>REGISTER</h2>
+                <form action="">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <input type="text" required>
+                        <label>User Name</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email ID</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember_forget">
+                        <label><input type="checkbox">I agree with the terms and conditons</label>
+                    </div>
+                    <button class="log" type="submit">REGISTER</button>
+                    <div class="register">
+                        <p>Already Have an account?<a href="#" class="login_link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <span class="element"><ion-icon name="close-outline"></ion-icon></span>
+            <div class="Caculator">
+                <form>
+                    <div class="ans-bar">
+                        <input type="text" name="display">
+                    </div>
+                    <div>
+                        <input type="button" value="AC" onclick="display.value=''" class="AC">
+                        <input type="button" value="." onclick="display.value+='.'">
+                        <input type="button" value="/" onclick="display.value+='/'">
+
+                    </div>
+                    <div>
+                        <input type="button" value="7" onclick="display.value+='7'">
+                        <input type="button" value="8" onclick="display.value+='8'">
+                        <input type="button" value="9" onclick="display.value+='9'">
+                        <input type="button" value="*" onclick="display.value+='*'">
+                        
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="display.value+='4'">
+                        <input type="button" value="5" onclick="display.value+='5'">
+                        <input type="button" value="6" onclick="display.value+='6'">
+                        <input type="button" value="-" onclick="display.value+='-'">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="display.value+='1'">
+                        <input type="button" value="2" onclick="display.value+='2'">
+                        <input type="button" value="3" onclick="display.value+='3'">
+                        <input type="button" value="+" onclick="display.value+='+'">
+                    </div>
+                    <div>
+                        <input type="button" value="00" onclick="display.value+='00'">
+                        <input type="button" value="0" onclick="display.value+='0'">
+                        <input type="button" value="=" onclick="display.value=eval(display.value)" class="equal">
+                    </div>
+                </form>
+            </div>
+        </div>
+    <script src="mini.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
